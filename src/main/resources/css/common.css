@@ -1,0 +1,27 @@
+#root {
+    -fx-min-height       : 500;
+    -fx-max-height       : 500;
+    -fx-min-width        : 300;
+    -fx-padding          : 10;
+    -fx-font-family      : "Bookman Old Style";
+    -fx-font-size        : 12pt;
+    -fx-background-color : #868686, darkgray;
+    -fx-background-radius: 4,4;
+    -fx-background-insets: 0,2;
+    -fx-opacity          : 0;
+}
+
+.plainText {
+    -fx-wrap-text: true;
+    -fx-text-fill: linear-gradient(#e2e2e2, #fefefe);
+    -fx-effect   : dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0.0, 0, 1);
+}
+
+.subHeader {
+    -fx-font-size: 14pt;
+}
+
+.bigSubHeader {
+    -fx-font-size  : 18pt;
+    -fx-font-weight: bold;
+}

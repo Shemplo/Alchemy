@@ -1,0 +1,13 @@
+@import "buttons.css";
+@import "common.css";
+
+ImageView {
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0.0, 0, 0);
+}
+
+#mainHeader {
+	-fx-font-size  : 32pt;
+	-fx-font-weight: bolder;
+    -fx-text-fill  : linear-gradient(#e2d666, #efd31f);
+    -fx-effect     : dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0.0, 0, 1);
+}

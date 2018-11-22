@@ -1,0 +1,56 @@
+@import "buttons.css";
+@import "common.css";
+
+ScrollPane {
+    -fx-min-width       : 200;
+    -fx-min-height      : 100;
+    -fx-padding         : 0;
+    -fx-background-color: none;
+}
+
+ScrollPane .scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+ScrollPane .scroll-bar:vertical *.decrement-button {
+    -fx-padding: 0; -fx-opacity: 0;
+}
+
+ScrollPane .scroll-bar:vertical *.increment-button {
+    -fx-padding: 0; -fx-opacity: 0;
+}
+
+ScrollPane .scroll-bar:vertical .track {
+    -fx-background-color: transparent;
+}
+
+ScrollPane .scroll-bar:vertical .thumb {
+    -fx-background-color: #e2d666;
+    -fx-effect          : dropshadow(three-pass-box,
+                                     rgba(0,0,0,0.6),
+                                     2.5, 0.0, 0, 0);
+}
+
+ScrollPane VBox {
+    -fx-padding          : 10;
+    -fx-background-color : darkgray, #888888, #ffffee;
+    -fx-background-insets: 0,0,1.5;
+    -fx-background-radius: 0,8,7;
+}
+
+ScrollPane VBox Button {
+    -fx-max-width       : 200;
+    -fx-padding         : 0.45em 0.5em;
+    -fx-wrap-text       : true;
+    -fx-background-color: linear-gradient(#f2f2f2, #d6d6d6),
+                          linear-gradient(#fcfcfc 0%, #d9d9d9 20%, #d6d6d6 100%),
+                          linear-gradient(#dddddd 0%, #f6f6f6 50%);
+}
+
+.menuItem {
+    -fx-min-width : 32;
+    -fx-min-height: 32;
+    -fx-max-width : 32;
+    -fx-max-height: 32;
+    -fx-padding   : 0;
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.control.ChoiceBox?>
+
+<VBox xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:id="root" spacing="16"
+      alignment="CENTER">
+    <Label styleClass="plainText, bigSubHeader" text="Start new game">
+        <VBox.margin><Insets bottom="16"/></VBox.margin>
+    </Label>
+
+    <Label styleClass="plainText, subHeader" text="Select recipes pack:"/>
+    <ChoiceBox fx:id="pack"/>
+    <Button fx:id="start" text="Start alchemy">
+        <VBox.margin><Insets bottom="32"/></VBox.margin>
+    </Button>
+
+    <Label styleClass="plainText" text="... or if it is not yours:"/>
+    <Button fx:id="back" text="Back to menu"/>
+</VBox>

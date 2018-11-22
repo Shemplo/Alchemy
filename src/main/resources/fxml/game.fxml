@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.HBox?>
+
+<?import javafx.scene.control.ScrollPane?>
+
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<StackPane xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1"
+           fx:id="root">
+    <HBox spacing="10">
+        <VBox HBox.hgrow="ALWAYS">
+            <HBox alignment="TOP_CENTER">
+                <Label styleClass="plainText, bigSubHeader"
+                       text="Table">
+                </Label>
+                <VBox.margin><Insets bottom="8"/></VBox.margin>
+            </HBox>
+            <ScrollPane VBox.vgrow="ALWAYS"
+                        hbarPolicy="NEVER"
+                        fitToWidth="true"
+                        fitToHeight="true">
+                <VBox fx:id="table" alignment="TOP_CENTER"
+                      spacing="8">
+                </VBox>
+            </ScrollPane>
+            <HBox alignment="CENTER" spacing="8">
+                <Button fx:id="alchemy" text="Alchemy"/>
+                <Button fx:id="clean" styleClass="menuItem">
+                    <graphic>
+                        <ImageView>
+                            <Image url="/gfx/swipe.png"/>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <VBox.margin><Insets top="8" bottom="8"/></VBox.margin>
+            </HBox>
+            <ScrollPane VBox.vgrow="ALWAYS"
+                        hbarPolicy="NEVER"
+                        fitToWidth="true"
+                        fitToHeight="true"
+                        maxHeight="100">
+                <VBox fx:id="result"
+                      alignment="CENTER"
+                      spacing="8">
+                </VBox>
+            </ScrollPane>
+            <HBox alignment="TOP_CENTER">
+            	<Label styleClass="plainText" text="Progress: " />
+            	<Label styleClass="plainText" fx:id="opened" />
+            	<Label styleClass="plainText" text=" / " />
+            	<Label styleClass="plainText" fx:id="total" />
+                <VBox.margin><Insets top="8"/></VBox.margin>
+            </HBox>
+        </VBox>
+        <VBox HBox.hgrow="ALWAYS">
+            <HBox alignment="TOP_CENTER">
+                <Label styleClass="plainText, bigSubHeader"
+                       text="Inventory">
+                </Label>
+                <VBox.margin><Insets bottom="8"/></VBox.margin>
+            </HBox>
+            <ScrollPane VBox.vgrow="ALWAYS"
+                        hbarPolicy="NEVER"
+                        fitToWidth="true"
+                        fitToHeight="true">
+                <VBox fx:id="inventory" alignment="TOP_CENTER"
+                      spacing="8">
+                </VBox>
+            </ScrollPane>
+        </VBox>
+        <VBox spacing="12">
+            <Button fx:id="back" styleClass="menuItem"/>
+            <Button fx:id="save" styleClass="menuItem"/>
+            <Button fx:id="help" styleClass="menuItem">
+            	<graphic>
+                    <ImageView>
+                        <Image url="/gfx/question.png"/>
+                    </ImageView>
+                </graphic>
+        	</Button>
+        </VBox>
+    </HBox>
+</StackPane>
