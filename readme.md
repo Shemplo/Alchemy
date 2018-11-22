@@ -78,6 +78,10 @@ The next lines describes recipes in format `result = item [+ item]*`.
 > ice = water + wind + wind  
 > chaos = fire + wind + earth + water
 
+To make this pack available for choosing in the game also necessary to add it in 
+enum `RecipesPack` in described there format. 
+Fast [link](src/main/java/ru/shemplo/game/alchemy/logic/data/RecipesPack.java) to file.
+
 ### :ambulance: How to contribute
 
 If you have built project succesfully, please, put a :star: to this repository
