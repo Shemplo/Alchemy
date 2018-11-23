@@ -54,7 +54,7 @@ It must be added to classpath by hands from original repository.
 
 And also your IDE shoud support [Lobok project](https://projectlombok.org) annotations processor.
 
-Now just add all of these things to project and **SUCESS** :tada:
+Now just add all of these things to project and **SUCESS**
 
 ### :mag: Format of file with recipes
 
