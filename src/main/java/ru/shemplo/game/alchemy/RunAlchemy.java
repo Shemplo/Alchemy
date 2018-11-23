@@ -8,9 +8,7 @@ public class RunAlchemy {
         PARAMS = GameParameters.instance ();
     
     public static void main (String ... args) {
-        PARAMS.addConsoleArguments (args);
-        PARAMS.validate ();
-        
+        PARAMS.addConsoleArguments (args); PARAMS.validate ();
         PARAMS.<GameMode> get (Parameter.MODE).run ();
     }
     

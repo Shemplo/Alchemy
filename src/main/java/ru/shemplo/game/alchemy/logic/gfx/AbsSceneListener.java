@@ -1,6 +1,7 @@
 package ru.shemplo.game.alchemy.logic.gfx;
 
 import java.util.Objects;
+import java.util.Random;
 
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -17,6 +18,7 @@ import ru.shemplo.game.alchemy.logic.Game;
 
 public abstract class AbsSceneListener implements SceneListener {
     
+    protected static final Random RANDOM = new Random ();
     protected static final int ANIMATION_FRAMES = 100;
     
     protected final GameParameters 

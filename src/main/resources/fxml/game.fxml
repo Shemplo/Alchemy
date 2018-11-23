@@ -74,6 +74,16 @@
                       spacing="8">
                 </VBox>
             </ScrollPane>
+            <HBox>
+            	<VBox.margin><Insets top="8"/></VBox.margin>
+            	<Button fx:id="suggest" styleClass="menuItem">
+	            	<graphic>
+	                    <ImageView>
+	                        <Image url="/gfx/dices.png"/>
+	                    </ImageView>
+	                </graphic>
+	        	</Button>
+            </HBox>
         </VBox>
         <VBox spacing="12">
             <Button fx:id="back" styleClass="menuItem"/>

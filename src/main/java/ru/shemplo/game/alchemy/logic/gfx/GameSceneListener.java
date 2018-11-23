@@ -44,7 +44,8 @@ public class GameSceneListener extends AbsSceneListener {
         INVENTORY ("inventory"),
         
         ALCHEMY ("alchemy"), CLEAN ("clean"),
-        BACK ("back"), SAVE ("save"), HELP ("help");
+        BACK ("back"), SAVE ("save"), HELP ("help"),
+        SUGGEST ("suggest");
         
         @Getter private final String id;
         
@@ -129,6 +130,18 @@ public class GameSceneListener extends AbsSceneListener {
                 ); label.setWrapText (true);
                 table.getChildren ().add (label);
             });
+        });
+        
+        Button suggest = GameComponent.SUGGEST.get (scene);
+        suggest.setOnAction (__ -> {
+            onTable.clear (); opened.set (null);
+            List <Entity> list = new ArrayList <> (game.getOpened ());
+            int limit = 1 + RANDOM.nextInt (3);
+            for (int i = 0; i < limit; i++) {
+                onTable.add (list.get (RANDOM.nextInt (list.size ())));
+            }
+            
+            Platform.runLater (this::updateTable);
         });
         
         updateInventory ();
