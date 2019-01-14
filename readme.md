@@ -48,10 +48,6 @@ The simplest way to run game:
 Necessary dependencies (exept one) are declared in `pom.xml` and can be easily installed 
 by `update` of maven project in IDE.
 
-One more dependency is [Snowball](https://github.com/AlienCoffee/Snowball) library of the same author. 
-Problem is that this library is not an architype in maven and can't be pulled with it. 
-It must be added to classpath by hands from original repository.
-
 And also your IDE shoud support [Lobok project](https://projectlombok.org) annotations processor.
 
 Now just add all of these things to project and **SUCESS**
